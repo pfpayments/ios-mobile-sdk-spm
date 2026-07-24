@@ -4,8 +4,3 @@ framework module PostFinanceCheckoutSdk {
 
   module * { export * }
 }
-
-module PostFinanceCheckoutSdk.Swift {
-  header "PostFinanceCheckoutSdk-Swift.h"
-  requires objc
-}
