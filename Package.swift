@@ -3,9 +3,13 @@ import PackageDescription
 
 let package = Package(
     name: "PostFinanceCheckoutSdk",
-    platforms: [.iOS("12.4")],
+    platforms: [.iOS("15.1")],
     products: [
-        .library(name: "PostFinanceCheckoutSdk", targets: ["PostFinanceCheckoutSdk"]),
+        .library(
+            name: "PostFinanceCheckoutSdk",
+            targets: ["PostFinanceCheckoutSdk", "ReactBrownfield", "ThreeDS_SDK", "TwintSDK", "hermes"]
+        ),
+        // kept for backward compatibility
         .library(name: "ReactBrownfield", targets: ["ReactBrownfield"]),
         .library(name: "ThreeDS_SDK", targets: ["ThreeDS_SDK"]),
         .library(name: "TwintSDK", targets: ["TwintSDK"]),
